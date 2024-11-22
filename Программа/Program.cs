@@ -84,7 +84,7 @@ namespace _10
              */
             #region Splitting array
             int charAmount = 0;
-            int[] alterableIndices = Utils.Input<string>("Задайте какие измерения использовать (напримепр 01001, где 1 - измерения, которые будут выведены)", false)
+            int[] alterableIndices = Utils.Input<string>("Задайте какие измерения использовать (например 01001, где 1 - измерения, которые будут выведены)", false)
                 .Select((c, index) => {
                     charAmount++;
                     return (c == '1') ? index : -1; 
